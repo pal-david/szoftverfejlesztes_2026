@@ -1,0 +1,1 @@
+# szoftverfejlesztes_2026
