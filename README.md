@@ -29,7 +29,7 @@
 
 ## Migráció / adatvédelem
 - Az első induláskor, ha nincs `offers` adat, a korábbi `coupons` táblából ajánlatokat állítunk elő kuponkód szerint. A régi kupontulajdonosi hozzárendelés NEM lesz automatikus aktiválás: a felhasználó a katalógusból maga aktivál.
-- A `data` mappádat másold a projekt gyökérmappájába, **csak ha meg akarod tartani** a korábbi H2-adatbázist. Előtte készíts biztonsági mentést. Különböző projekteknek saját `./data` mappájuk van.
+- A `data` mappádat másold a projekt gyökérmappájába, **csak ha meg akarod tartani** a korábbi H2-adatbázist. Előtte készíts biztonsági mentést. Különböző projekteknek saját `data` mappájuk van.
 - Ha a korábbi H2 adatbázis másik jelszóval jött létre, a `spring.datasource.password` értékét ahhoz kell igazítani. A `.properties` fájl átírása NEM változtatja meg az adatbázis jelszavát.
 - A H2 konzol és a DEMO fiókok csak fejlesztéshez valók: éles környezet előtt tiltsd le / távolítsd el őket.
 - A mintakód közös kuponkódot tárol ajánlatonként. Egyedi, egyszer használatos kódok vagy tényleges beváltáskezelés további fejlesztést igényelnek.
